@@ -1,0 +1,228 @@
+PS D:\appfoster-ase-training> git --version
+git version 2.44.0.windows.1
+PS D:\appfoster-ase-training> git config --global --list
+user.name=Aashrey
+user.email=aashrey@appfoster.com
+PS D:\appfoster-ase-training> git status
+fatal: not a git repository (or any of the parent directories): .git
+PS D:\appfoster-ase-training> git init
+Initialized empty Git repository in D:/appfoster-ase-training/.git/
+'D:/appfoster-ase-training' is owned by:
+        BUILTIN/Administrators (S-1-5-32-544)
+but the current user is:
+        LAPTOP-UI162LV5/Lenovo (S-1-5-21-3939717084-307507544-4256464193-1001)
+To add an exception for this directory, call:
+
+        git config --global --add safe.directory D:/appfoster-ase-training
+PS D:\appfoster-ase-training>  git config --global --add safe.directory D:/appfoster-ase-training
+PS D:\appfoster-ase-training> git status
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        task-3-basic-html.zip
+        task-3-basic-html/
+nothing added to commit but untracked files present (use "git add" to track)
+PS D:\appfoster-ase-training>  git config --global --add safe.directory D:/appfoster-ase-training
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        task-3-basic-html/
+
+nothing added to commit but untracked files present (use "git add" to track)
+Remove-Item : A parameter cannot be found that matches parameter name 'rf'.
+At line:1 char:4
++ rm -rf .git
++    ~~~
+    + CategoryInfo          : InvalidArgument: (:) [Remove-Item], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Commands.RemoveItemCommand
+ 
+PS D:\appfoster-ase-training> git init -b main
+PS D:\appfoster-ase-training> git status
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        task-3-basic-html/
+nothing added to commit but untracked files present (use "git add" to track)
+Remove-Item : A parameter cannot be found that matches parameter name 'rf'.
++ rm -rf .git
++    ~~~
+    + CategoryInfo          : InvalidArgument: (:) [Remove-Item], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Commands.RemoveItemCommand
+ 
+PS D:\appfoster-ase-training> Remove-Item -Path .\.git -Recurse -Force
+>> 
+PS D:\appfoster-ase-training> git status
+fatal: not a git repository (or any of the parent directories): .git
+unknown option: -b
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
+PS D:\appfoster-ase-training> git status
+fatal: not a git repository (or any of the parent directories): .git
+PS D:\appfoster-ase-training> git init -b main
+Initialized empty Git repository in D:/appfoster-ase-training/.git/
+PS D:\appfoster-ase-training> git status
+On branch main
+
+No commits yet
+
+        task-3-basic-html/
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS D:\appfoster-ase-training> git add resume.html
+fatal: pathspec 'resume.html' did not match any files
+PS D:\appfoster-ase-training> git add task-3-basic-html/resume.html
+PS D:\appfoster-ase-training> git status
+On branch main
+
+
+  (use "git rm --cached <file>..." to unstage)
+        new file:   task-3-basic-html/resume.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        task-3-basic-html/user-icon.png
+
+PS D:\appfoster-ase-training> git add task-3-basic-html/user-icon.png
+PS D:\appfoster-ase-training> git status
+
+  (use "git rm --cached <file>..." to unstage)
+        new file:   task-3-basic-html/resume.html
+        new file:   task-3-basic-html/user-icon.png
+
+PS D:\appfoster-ase-training> git log
+fatal: your current branch 'main' does not have any commits yet
+PS D:\appfoster-ase-training> git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   task-3-basic-html/resume.html
+        new file:   task-3-basic-html/user-icon.png
+
+PS D:\appfoster-ase-training> git rm --cached task-3-basic-html/user-icon.png
+rm 'task-3-basic-html/user-icon.png'
+PS D:\appfoster-ase-training> git add task-3-basic-html/user-icon.png
+PS D:\appfoster-ase-training> git add task-3-basic-html/Readme.md
+PS D:\appfoster-ase-training> ssh-keygen -o
+Enter file in which to save the key (C:\Users\Lenovo/.ssh/id_rsa):
+Created directory 'C:\Users\Lenovo/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in C:\Users\Lenovo/.ssh/id_rsa.
+Your public key has been saved in C:\Users\Lenovo/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:fwC2X1sbH3RPeRixKS7CDbJEVoPCgTSoy4js2Sqvdrg lenovo@LAPTOP-UI162LV5
+The key's randomart image is:
++---[RSA 3072]----+
+| ooo..ooo     o. |
+|.    .o +   . +o+|
+|.    . = = . ...+|
+|=.    . S + o o..|
+|+o       + + o +.|
+|. +       o o . .|
+|.= o       .     |
+|+E=              |
+PS D:\appfoster-ase-training> ls
+
+
+    Directory: D:\appfoster-ase-training
+
+
+Mode                 LastWriteTime         Length Name
+d-----        05-03-2024     12:33                task-3-basic-html
+d-----        05-03-2024     10:59                task-5-learning-git
+
+
+PS D:\appfoster-ase-training> ls -a
+Get-ChildItem : Parameter cannot be processed because the parameter name 'a' is ambiguous. Possible matches include: -Attributes -Directory -File -Hidden -ReadOnly -System.
+At line:1 char:4
++ ls -a
++    ~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-ChildItem], ParameterBindingException
+    + FullyQualifiedErrorId : AmbiguousParameter,Microsoft.PowerShell.Commands.GetChildItemCommand
+Get-ChildItem : Parameter cannot be processed because the parameter name 'a' is ambiguous. Possible matches include: -Attributes -Directory -File -Hidden -ReadOnly -System.
+At line:1 char:4
++ ls -a
++    ~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-ChildItem], ParameterBindingException
+    + FullyQualifiedErrorId : AmbiguousParameter,Microsoft.PowerShell.Commands.GetChildItemCommand
+ 
+
+
+    Directory: D:\appfoster-ase-training
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+
+
+PS D:\appfoster-ase-training> C:
+PS C:\> ls -a
+Get-ChildItem : Parameter cannot be processed because the parameter name 'a' is ambiguous. Possible matches include: -Attributes -Directory -File -Hidden -ReadOnly -System.
+At line:1 char:4
++ ls -a
+    + CategoryInfo          : InvalidArgument: (:) [Get-ChildItem], ParameterBindingException
+    + FullyQualifiedErrorId : AmbiguousParameter,Microsoft.PowerShell.Commands.GetChildItemCommand
+ 
+PS C:\> cd .ssh
+cd : Cannot find path 'C:\.ssh' because it does not exist.
+At line:1 char:1
++ cd .ssh
+ 
+PS D:\appfoster-ase-training> cd .ssh
+cd : Cannot find path 'D:\appfoster-ase-training\.ssh' because it does not exist.
++ cd .ssh
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (D:\appfoster-ase-training\.ssh:String) [Set-Location], ItemNotFoundException
+cd : Cannot find path 'D:\appfoster-ase-training\.ssh' because it does not exist.
+At line:1 char:1
++ cd .ssh
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (D:\appfoster-ase-training\.ssh:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+PS D:\appfoster-ase-training> C:
+PS D:\appfoster-ase-training> git remote add origin git@github.com:aashrey01/task-3-basic-html.git
+PS D:\appfoster-ase-training> ^C
+PS D:\appfoster-ase-training> git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'github.com:aashrey01/task-3-basic-html.git'
+PS D:\appfoster-ase-training> git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'github.com:aashrey01/task-3-basic-html.git'
+PS D:\appfoster-ase-training> git branch
+>>
+PS D:\appfoster-ase-training> git branch
+PS D:\appfoster-ase-training> git commit -m "My first commit"
+[main (root-commit) eb602e9] My first commit
+ 3 files changed, 175 insertions(+)
+ create mode 100644 task-3-basic-html/Readme.md
+ create mode 100644 task-3-basic-html/resume.html
+ create mode 100644 task-3-basic-html/user-icon.png
+PS D:\appfoster-ase-training> git branch
+>>
+* main
+PS D:\appfoster-ase-training> git push -u origin main
+The authenticity of host 'github.com (20.207.73.82)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 21.07 KiB | 1.24 MiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:aashrey01/task-3-basic-html.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
