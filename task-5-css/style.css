@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    margin: 50px;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 900px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+
+.container .left-side{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+
+.about{
+    margin-top: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h4{
+    color: rgb(54, 116, 182);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+h4 span{
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+p{
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.9;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.about1{
+    margin-top: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.about1 .text{
+    margin-top: 20px;
+    font-size: large;
+    font-weight: 600;
+}
+
+.company {
+    display: flex;
+    flex-direction: column;
+}
+
+.company-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.company #a {
+    opacity: 0.6;
+    font-size: 14px;
+}
+
+.company #b {
+    opacity: 0.6;
+    font-size: 14px;
+}
+
+.company p {
+    margin-top: 10px;
+}
+
+.about2{
+    margin-top: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.about2 h4{
+    margin-bottom: 20px;
+}
+
+.about2 a{
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.about2 p{
+    font-size: 14px;
+}
+
+.about2 #l{
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.about3{
+    margin-top: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.about3 h4{
+    margin-bottom: 20px;
+}
+
+/* .about3 ul{
+    list-style-type: none;
+}
+
+.about3 .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    display: block;
+    background: #636262;
+} */
+
+.about3 .test{
+    font-weight: bold;
+}
+
+.about3 ul li {
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Align items vertically */
+}
+
+
+.about3 .test {
+    flex: 1; /* Take remaining space */
+}
+
+.about3 .percent {
+    position: relative;
+    width: 70%;
+    height: 10px;
+    display: block;
+    background: #c0b9b9;
+}
+
+.about3 .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(158, 119, 205);
+}
+
+
+
+
+.container .right-side{
+    background: rgb(99, 63, 161);
+}
+
+.container .right-side .right-side-u{
+    position: relative;
+    background: rgb(47, 0, 128);
+    padding: 20px;
+}
+
+.container .right-side .right-side-l{
+    position: relative;
+    background: rgb(99, 63, 161);
+    padding: 20px;
+}
+
+
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profileText .imgBx{
+    margin-top: 5px;
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profileText .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.profileText h2{
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 600;
+    display: block;
+}
+
+.profileText h2 span{
+    font-size: small;
+    font-weight: 200;
+    opacity: 0.6;
+    font-family: sans-serif;
+    margin-top: 5px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* .contactInfo{
+
+} */
+
+.contactInfo ul{
+    margin-top: 20px;
+    position: relative;
+    list-style-type: none;
+    color: #fff;
+    
+}
+
+.contactInfo ul li{
+    position: relative;
+    margin: 10px 0;
+    margin-bottom: 5px;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contactInfo ul li span{
+    font-size: small;
+}
+
+.edu{
+    margin-top: 80px;
+}
+
+.edu h2{
+    color: #fff;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.edu ul{
+    list-style-type: none;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.edu ul li{
+    margin-top: 5px;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.edu span{
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+.lang{
+    margin-top: 70px;
+    color: #fff;
+}
+
+.lang h2{
+    color: #fff;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.lang ul{
+    list-style-type: none;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.lang ul li{
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.lang ul li span{
+    opacity: 0.6;
+}
+
