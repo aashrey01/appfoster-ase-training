@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML FORM</title>
+
+        <style>
+            body{
+                background: rgb(188, 207, 243);
+            }
+            
+            input[type="text"]:hover,
+            input[type="number"]:hover,
+            input[type="email"]:hover,
+               textarea:hover {
+                 background-color: rgb(114, 114, 216); /* Change background color to blue */
+                 color: white; /* Change text color to white */
+               }
+           
+        </style>
+    </head>
+    <body>
+        <form action="#">
+            
+            <fieldset>
+                <table>
+                    <legend>Primary Details</legend>
+                    <tr>
+                        <td>
+
+                        </td>
+                        <td style="text-align: right; padding-right: 100px;">
+                            Valid Till
+                        </td>                  
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="medi">Medicare No</label>
+                        </td>
+                        <td>
+                            <input type="text" id="medi">
+                            <b>/</b> <input type="text" id="medi" size="2">
+                            <input type="date" id="medi">
+                            <input type="text" size="1" disabled >
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="title">Title</label>
+                        </td>
+                        <td>
+                        <select id="title">
+                            <option value="none" selected>None</option>
+                            <option value="mr" >Mr.</option>
+                            <option value="ms" >Mrs.</option>
+                            <option value="not" >Not to prefer</option>
+                        </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+
+                        </td>
+                        <td>
+                            LName,FName, MName
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="name">Name</label>
+                        </td>
+                        <td>
+                            <input type="text" name="" id="name" size="48">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="pref">Pref. Name</label>
+                        </td>
+                        <td>
+                            <input type="text" name="" id="pref" size="30">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="dob">DOB</label>
+                        </td>
+                        <td>
+                            <input type="date" name="" id="dob">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="sex">Sex</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="sex"> Male
+                            <input type="radio" name="sex"> Female
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="fam">Family Name</label>
+                        </td>
+                        <td>
+                            <input type="text" size="30">
+                            <button>N</button>
+                            <button>I</button>
+                        </td>
+                    </tr>
+
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <table>
+                    <legend>Contact Details</legend>
+
+                    <tr>
+                        <td>
+
+                        </td>
+                        <td>
+                            <span style="text-align: left; padding-right: 135px; ">Work</span>
+                            <span style="text-align: right; ">Home</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="phone">Phone</label>
+                        </td>
+                        <td>
+                            <input type="number" name="" id="" size="12">
+                            <input type="number" name="" id="" size="12">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+
+                        </td>
+                        <td>
+                            <span style="text-align: left; padding-right: 125px;">Mobile</span>
+                            <span style="text-align: right;">Fax</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            <input type="number">
+                            <input type="number">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+
+                        </td>
+                        <td>
+                            <span style="text-align: left; padding-right: 95px;">Next of Kin</span>
+                            <span style="text-align: right;">Next of Kin Ph.</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            <input type="number">
+                            <input type="number">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="emer">Emergency No.</label>
+                        </td>
+                        <td>
+                            <input type="number" name="" id="">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="email">Email</label>
+                        </td>
+                        <td>
+                            <input type="email">
+                        </td>
+                    </tr>
+
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend>Address Details</legend>
+
+                <fieldset>
+                    <legend>Residential Details</legend>
+
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="add1">Address 1</label>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="" size="48">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="add1">Address 2</label>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="" size="48">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="sub">Suburb</label>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="" size="20">
+                                <span style="text-align:left; padding-left: 22px;"></span>
+                                <label for="state">State</label>
+                                <select id="state">
+                                    <option value="up" selected>Uttar Pradesh</option>
+                                    <option value="uk" >Uttarakhand</option>
+                                    <option value="jk" >Jammu&Kashmir</option>
+                                    <option value="raj" >Rajasthan</option>
+                                </select>
+                            </span>
+                            </td>
+                           
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="postal">Postal Code</label>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="postal" size="10">
+                                <button>?</button>
+                                <span style="text-align:left; padding-left: 70px;">
+                                <label for="country">Country</label>
+                                <select id="country">
+                                    <option value="up" selected>India</option>
+                                    <option value="uk"  >Australia</option>
+                                    <option value="jk" >England</option>
+                                    <option value="raj" >South Africa</option>
+                                </select>
+                            </span>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Single Address</legend>
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="same">Are mailing address and Residential address same?</label>
+                            </td>
+                            <td>
+                                <input type="radio" name="" id="same">Yes
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Mailing Address</legend>
+
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="add1">Address 1</label>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="" size="48">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="add1">Address 2</label>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="" size="48">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="sub">Suburb</label>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="" size="20">
+                                <span style="text-align:left; padding-left: 22px;"></span>
+                                <label for="state">State</label>
+                                <select id="state">
+                                    <option value="up" selected>Uttar Pradesh</option>
+                                    <option value="uk" >Uttarakhand</option>
+                                    <option value="jk" >Jammu&Kashmir</option>
+                                    <option value="raj" >Rajasthan</option>
+                                </select>
+                            </span>
+                            </td>
+                           
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="postal">Postal Code</label>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="postal" size="10">
+                                <button>?</button>
+                                <span style="text-align:left; padding-left: 70px;">
+                                <label for="country">Country</label>
+                                <select id="country">
+                                    <option value="up" selected>India</option>
+                                    <option value="uk"  >Australia</option>
+                                    <option value="jk" >England</option>
+                                    <option value="raj" >South Africa</option>
+                                </select>
+                            </span>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                </fieldset>
+                
+            </fieldset>
+
+            <table style="padding-left: 30px;">
+                <tr>
+                    <td>
+                        <label for="ihi">IHI Number</label>
+                    </td>
+                    
+                    <td>   
+                        <span style="padding-right: 10px;">80036</span> <input type="text" name="" id="" size="12">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="ihi">Number Status</label>
+                    </td>
+                    <td>   
+                        <input type="number" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="ihi">Record Status</label>
+                    </td>
+                    <td>   
+                        <input type="number">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="ihi">Last Updated</label>
+                    </td>
+                    <td>   
+                        <input type="text">
+                    </td>
+                </tr>
+            </table>
+
+            <div style="padding-left: 100px; padding-top: 25px;">
+                <button style="width: 130px; height: 20px;">Submit</button>
+                <button style="width: 130px; height: 20px;">Clear</button>
+            </div>
+            
+        </form>
+        
+    </body>
+</html>
