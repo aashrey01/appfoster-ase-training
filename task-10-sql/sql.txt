@@ -1,0 +1,28 @@
+1)  
+insert into Customers values (6,"John", "Doe", 31, "USA");
+
+
+2)
+insert into Customers values (7,"Raman", "Rum", 21, "INDIA");
+insert into Customers values (8,"Luka", "Rose", 35, "NIGERIA");
+insert into Customers values (9,"Anil", "Das", 40, "INDIA");
+insert into Customers values (10,"Samuel", "Sad", 31, "NIGERIA");
+
+
+3)
+select country,count(*) as customers from Customers group by country; 
+
+
+4)
+select * from Orders where amount between 100 and 500
+
+5)
+select first_name,last_name from Customers inner join Orders on Customers.customer_id=Orders.customer_id where Orders.item="Keyboard"
+
+
+6)
+select country from Customers inner join Shippings on Customers.customer_id=Shippings.customer where Shippings.status="Pending"
+
+
+7)
+select Customers.customer_id,count(*) as orders from Customers inner join Orders on Customers.customer_id=Orders.customer_id group by Orders.customer_id
