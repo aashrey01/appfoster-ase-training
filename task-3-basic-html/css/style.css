@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensure container wraps around floated image */
+    padding: 40px;
+}
+.header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden; /* Clear floats */
+}
+.header img {
+    float: right;
+    width: 180px;
+    height: 180px;
+    border-radius: 5px;
+    background-color: #fff; 
+}
+.header-info {
+    float: left;
+    width: calc(180% - 190px); /* Adjust width for image and margin */
+}
+.header h1 {
+    margin-top: 0;
+}
+.grey-background {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+h1, h2, h3 {
+    margin-bottom: 10px;
+}
+p {
+    margin: 5px 0;  
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+.section:last-child {
+    margin-bottom: 0;
+}
+.skills {
+    margin-bottom: 20px;
+}
+.skills ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+.skills li {
+    margin-bottom: 5px;
+}
+table {
+    width: 100%;
+}
+table, th, td {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+}
+.tab th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+a{
+    color: black;
+    
+}
+
+span{
+    display: block;
+}
+
+.tab {
+    border-collapse: collapse; /* Collapse table borders into a single border */
+    border: none;
+}
+
+.tab td {
+    border: none; /* Remove borders from table cells */
+    
+}
+
+.tab td li{
+    list-style-type: square;
+}
+
+.tab td li::marker{
+    color: green;
+}
+
+.row .column ul li{
+    margin-left: 30px;
+}
+
+.row .coll ul li{
+    margin-right: 120px;
+}
+
+.last{
+    border: 2px solid black;
+}
+
+.last tr,td,th{
+    border: 2px solid black;
+}
+
+.last tr th{
+    text-align: center;
+    height: 20px;
+}
+
+.last tr td{
+    text-align: center;
+    height: 20px;
+
+}
+
+.io{
+    padding: 40px;
+}
