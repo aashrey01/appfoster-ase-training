@@ -155,7 +155,7 @@ p{
     width: 70%;
     height: 10px;
     display: block;
-    background: #c0b9b9;
+    background: #d7b1e7;
 }
 
 .about3 .percent div {
@@ -252,6 +252,11 @@ p{
 
 .contactInfo ul li span{
     font-size: small;
+}
+
+.contactInfo ul li span a{
+    color: #fff;
+    text-decoration: none;
 }
 
 .edu{
