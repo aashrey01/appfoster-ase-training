@@ -1,0 +1,11 @@
+body {
+    background: rgb(188, 207, 243);
+}
+
+input[type="text"]:hover,
+input[type="number"]:hover,
+input[type="email"]:hover,
+textarea:hover {
+    background-color: rgb(114, 114, 216);
+    color: white;
+}
