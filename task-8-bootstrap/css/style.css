@@ -1,0 +1,117 @@
+.yellow {
+    background-color: rgb(219, 213, 171);
+}
+
+.purple {
+    background-color: rgb(145, 128, 167);
+}
+
+.blue {
+    background-color: rgb(119, 168, 224);
+}
+
+.red {
+    background-color: rgb(235, 190, 194);
+}
+
+.green {
+    background-color: rgb(180, 236, 180);
+}
+
+.dark-blue {
+    background-color: rgb(90, 109, 203);
+}
+
+.company {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Optional: Center the elements vertically */
+}
+
+.company h3,
+.company p {
+    display: inline;
+}
+
+#nav-toggle {
+    display: flex;
+    align-items: center;
+}
+
+.vl {
+    border-left: 1px solid rgba(160, 139, 139, 0.896);
+    height: 30px;
+    margin-right: 5px;
+}
+
+.horizontal-slash {
+    border-top: 1px solid rgba(26, 25, 25, 0.896);
+    padding: 2px;
+    width: 20px;
+    height: 3px;
+}
+
+.horizontal-slash-m {
+    border-top: 1px solid rgba(26, 25, 25, 0.896);
+    padding: 2px;
+    width: 20px;
+    height: 3px;
+}
+
+.imgBx {
+    margin-top: 4px;
+    position: relative;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.pro {
+    margin-top: 20px;
+}
+
+.pro p {
+    margin-top: -10px;
+}
+
+.smaller-icon {
+    font-size: 8px;
+    font-weight: 400;
+}
+
+.nav-link:hover .fa-regular,
+.nav-link:hover .fa-solid {
+    color: blue;
+    /* Change color as desired */
+}
+
+.h-slash {
+    border-radius: 50%;
+    background-color: rgba(26, 25, 25, 0.896);
+    width: 5px;
+    height: 5px;
+    margin-bottom: 2px;
+}
+
+.h-slash-m {
+    border-radius: 50%;
+    background-color: rgba(26, 25, 25, 0.896);
+    width: 5px;
+    height: 5px;
+    margin-bottom: 2px;
+}
+
+.card-footer{
+    margin-top: -30px;
+}
