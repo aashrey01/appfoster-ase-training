@@ -1,0 +1,68 @@
+body{
+    background-color: rgb(222, 211, 211);
+}
+
+.container-1{
+    background-color: white;
+    margin-bottom: 5px;
+    height: 65px;
+}
+
+.container-2{
+    background-color: white;
+    margin-bottom: 5px;
+    height: 65px;
+}
+
+.container-3{
+    background-color: white;
+    height: 45px;
+}
+
+.container label{
+    font-size: 20px;
+}
+
+.container label{
+    margin-left: 8px;
+    
+}
+
+.container input{
+    margin-left: 8px;
+    width: 1500px;
+    height: 30px;
+    font-size: 16px;
+}
+
+button{
+    background-color: rgb(107, 124, 209);
+    color: white;
+    border-radius: 10%;
+    height: 30px;
+    width: 70px;
+    margin-top: 7px;
+    margin-left: 8px;
+}
+
+button:hover{
+    background-color: blue;
+}
+
+/* Adding style for the result container */
+.result-container {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Adding style for the number block */
+.number-block {
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    flex-grow: 1;
+    height: 100px;
+}
