@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Async</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/bfbdafc4cc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <table>
+        <tr class="head">
+          <th class="head-l">User Name</th>
+          <th class="head-r">Action</th>
+        </tr>
+        <tr>
+          <td class="user-cell">Krishnadasa Singh CPA</td>
+          <td class="action-cell"><button id="btn1" onclick="openPopup('Anasuya Mahajan')"><i
+                class="fa-solid fa-eye"></i></button></td>
+
+        </tr>
+        <tr>
+          <td class="user-cell">Ronald Bradley</td>
+          <td class="action-cell"><button id="btn2" onclick="openPopup('Ronald Bradley')"><i
+                class="fa-solid fa-eye"></i></button></td>
+        </tr>
+        <tr>
+          <td class="user-cell">Rafael Briggs</td>
+          <td class="action-cell"><button id="btn3" onclick="openPopup('Rafael Briggs')"><i
+                class="fa-solid fa-eye"></i></button></td>
+        </tr>
+        <tr>
+          <td class="user-cell">Vicky Meyer</td>
+          <td class="action-cell"><button id="btn4" onclick="openPopup('Vicky Meyer')"><i
+                class="fa-solid fa-eye"></i></button></td>
+        </tr>
+        <tr>
+          <td class="user-cell-last">Nichole Heynes</td>
+          <td class="action-cell-last"><button id="btn5" onclick="openPopup('Nichole Heynes')"><i
+                class="fa-solid fa-eye"></i></button></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="popup" id="pop">
+    <h2>User Details</h2>
+    <p id="modalContent"></p>
+    <button type="button" onclick="closePopup()">Close</button>
+  </div>
+
+  <nav aria-label="...">
+    <ul class="pagination">
+      <li class="page-item disabled">
+        <a class="page-link" href="#" tabindex="-1">Previous</a>
+      </li>
+      <li class="page-item active"><a class="page-link" href="#">1 <span class="sr-only">(current)</span></a></li>
+      <li class="page-item">
+        <a class="page-link" href="index-2.html">2</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="index-3.html">3</a></li>
+
+      <li class="page-item"><a class="page-link" href="#">...</a></li>
+
+      <li class="page-item"><a class="page-link" href="#">25</a></li>
+      <li class="page-item">
+        <a class="page-link" href="index-2.html">Next</a>
+      </li>
+    </ul>
+  </nav>
+
+  <script src="script/main.js"></script>
+</body>
+
+</html>

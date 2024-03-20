@@ -1,0 +1,161 @@
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-bottom: 40px;
+}
+
+tr .action-cell,.user-cell{
+    border-bottom: 2px solid rgba(56, 55, 55, 0.518);
+    margin-bottom: 50px;
+}
+
+.head-l{
+    font-size: 20px;
+    text-align: left;
+    padding: 25px;
+}
+
+.head-r{
+    font-size: 20px;
+    text-align: right;
+    padding: 25px;
+}
+
+.head{
+    border-bottom: 2px solid rgba(56, 55, 55, 0.518);
+}
+
+.fa-solid{
+    color: rgb(0, 110, 255);
+}
+
+td{
+    color: rgb(0, 110, 255);
+}
+
+td{
+    font-size: 20px;
+    padding: 30px;
+}
+
+button{
+    border: none;
+    background-color: white;
+}
+
+.fa-solid:hover{
+    color: rgb(160, 190, 190);
+    cursor: pointer;
+}
+
+
+.container {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .content {
+    flex: 1;
+  }
+  
+  .user-cell,.user-cell-last {
+    text-align: left;
+    width: 40%; /* Adjust width as needed */
+    } 
+  
+   .action-cell,.action-cell-last {
+    text-align: right;
+    width: 1000px;  /*Adjust width as needed */
+  }
+ 
+
+  .button {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+
+.page-link {
+    color: gray;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .page-item {
+    list-style: none;
+  }
+  
+  .page-link {
+    color: #007bff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #424243;
+    border-radius: 1px;
+  }
+  
+  .page-link:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .page-item.active .page-link {
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #007bff;
+  }
+  
+  .page-item.disabled .page-link {
+    color: #6c757d;
+    pointer-events: none;
+  }
+  
+  .page-item.disabled .page-link:hover {
+    background-color: transparent;
+  }
+
+  .popup {
+    width: 400px;
+    height: 500px;
+    background: #1d529c;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 30px 30px; /* Corrected padding values */
+    color: #e5dcdc;
+    visibility: visible;
+}
+
+
+.open-popup{
+  visibility: visible;
+}
+
+.popup button{
+  display: inline-block;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+}
+
+.popup button:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+}
